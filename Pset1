@@ -7,27 +7,30 @@ int main(void)
     // TODO: Prompt for start size
     
     int inicio;
-    do{
+    do
+    {
         inicio = get_int("Start size: ");
     }
-    while(inicio < 9);
+    while (inicio < 9);
 
     // TODO: Prompt for end size
     
     int final;
-    do{
+    do
+    {
         final = get_int("End size: ");
     }
-    while(inicio > final);
+    while (inicio > final);
 
     // TODO: Calculate number of years until we reach threshold
     
     int anos = 0;
     int p = inicio;
     int ganho = 0;
-    int perda =0;
+    int perda = 0;
     
-    while(p < final){
+    while (p < final)
+    {
         
         ganho = p / 3;
         perda = p / 4;
